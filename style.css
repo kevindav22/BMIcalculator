@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  background-color: #fff;
+  width: auto; /* Lebar kotak diperbesar */
+  padding: 20px 40px; /* Padding diubah (atas-bawah, kiri-kanan) */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+#sub {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='number'] {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi saat dihover */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#bmiResult {
+  color: #007bff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#bmiStatus {
+  color: #007bff;
+  font-size: 20px;
+  padding: 10px;
+}
+#bmiStatus.Underweight {
+  color: #ffc107; /* Warna untuk Underweight */
+}
+
+#bmiStatus.Normal {
+  color: #28a745; /* Warna untuk Normal weight */
+}
+
+#bmiStatus.Overweight {
+  color: #ff5733; /* Warna untuk Overweight */
+}
+
+#bmiStatus.Obesity {
+  color: #ff0000; /* Warna untuk Obesity */
+}
+
+/* Tambahkan margin dan padding untuk tampilan tabel yang lebih rapi */
+label,
+input,
+button {
+  margin-bottom: 5px;
+}
+
+input[type='number'] {
+  padding: 8px;
+}
